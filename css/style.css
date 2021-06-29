@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+    margin: 0%;
+    /* Fuente principal que se econtrara
+    en todo el cuerpo de la paginá */
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 120vh;
+    background: url(../img/bg-header.png);
+    background-size: cover;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    /* pandding marge exterior */
+    padding-top: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu ul li{
+    display: inline-block;
+    margin: 0 18px;
+}
+
+#menu ul li a{
+    color: white;
+    font-size: 26PX;
+    text-decoration: none;
+    border-bottom: 2px dotted transparent;
+    transition: .4s;
+}
+
+#menu ul li a:hover{
+    border-bottom: 2px dotted yellow;
+    color: yellow;
+}
+
+#hero{
+    text-align:center ;
+    padding-top: 200px;
+}
+
+#hero h1{
+    color: yellow;
+    font-size: 70px;
+    margin: 0%;
+    font-family:'Courier New', Courier, monospace
+
+}
+
+#hero h3{
+    color: white;
+    font-size: 25px;
+    margin: 0;
+}
+
+#hero button{
+    background: yellow;
+    color: #999999;
+    font-size: 30PX;
+    border-radius: 15px;
+    margin-top: 100px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: bold;
+}
+
+#hero button:hover{
+    background: white;    
+    border-radius: 0;
+}
+
+/* Inicio planes */
+/* # id . classes */
+#planes{
+ background-color: white;
+ width: 100%;
+ position: relative;
+ padding-top: 60px;
+ padding-bottom: 145px;
+ /* text align centrar texto */
+ text-align: center;
+}
+
+#planes h2{
+    font-size: 50px;
+}
+
+#planes p{
+    font-size: 15px;
+    /* margin margen exterior */
+    margin-bottom: 60px;
+    
+}
+
+#planes .row{
+    /* desbloquea opciones  */
+    display: flex;
+    /* alinear horizontal */
+    /* flex start alinea a la izquierda */
+    /* flex end a la derecha */
+    /* flex center centrado */
+    /* space around mismo espacio entre ellos */
+    justify-content: space-around; 
+    /* alinear vertical */
+    /* flex start alinea arriba */
+    /* flex end alinea abajo */
+    align-items: center;
+}
+
+#planes .row .item-planes{
+    padding: 5px;
+    position: relative;
+    transition: 0.4s;
+}
+
+#planes .row .item-planes:hover{
+    box-shadow:0 0px 9px 0px #e2dada;
+}
+
+
+#planes .row .item-planes:hover img{
+ border-radius: 50%;
+}
+
+#planes .row .item-planes:hover img{
+    transition: 0.4s;
+}
+
+#planes .row .item-planes:hover h3{
+    color: white;
+}
+
+#planes .row .item-planes h3{
+    /* position absolute desbloquea
+    4 opciones de alineación */
+    color: yellow;
+    
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  right: 0px;
+  font-size: 30px;
+  transition: 0.4s;
+}
+/* Fin planes */
+
+/* INICIO DESTINOS */
+#destinos{
+    width: 100%;
+    height: 120vh;
+    background: url(../img/bg-destinos.png);
+    background-size: cover;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+
+}
+
+#destinos h2{
+    color: yellow;
+    font-size: 50px;
+}
+
+#destinos .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+ 
+}
+
+#destinos h3{
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.4s;
+}
+
+#destinos .row :hover h3{
+    color: yellow;
+    border-bottom: solid yellow;
+}
+
+#contacto{
+    background: yellow;
+    padding: 30px 0 110px;
+    text-align: center;
+}
+
+#contacto h2{
+    font-size: 50px;
+}
+
+#contacto p{
+    font-size: 24px;
+    margin-bottom: 70px;
+}
+
+#contacto .row{
+    margin-top: 25px;
+} 
+
+#contacto .row .campof{
+    width: 300px;
+    padding: 12px;
+    margin: 0 15px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 2px solid gray;
+}
+
+/* el importNT ES PARA QUE MANDE EL 2 VALOR */
+#contacto .row select{
+    width: 326px !important;
+    color: #807d7d;
+}
+
+#contacto form button{
+    padding: 8px 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    background: #898d0e;
+    color: white;
+    border-radius: 5px;
+    border: transparent;
+}
+
+footer{
+    background: black;
+    color: white;
+    font-size: 20PX;
+    text-align: center;
+    padding: 40PX 0;
+}

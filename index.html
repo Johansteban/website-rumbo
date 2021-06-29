@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Rumbo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header es la cabecera del sitio web -->
+    <header>
+        <!-- Container centrar el contenido de la página -->
+        <div class="container">
+            <!-- Class es si se repite -->
+            <!-- Nav es la barra de navegación -->
+            <nav>
+                <div id="logo">
+                    <!-- Logo en etiqueta a ya que funciona como un boton de redireccion al home -->
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div id="menu">
+                    <!-- Id es para elementos unicos -->
+                    <ul>
+                        <!-- ul estructura base para cualquier lista -->
+                        <li><a href="#header">Inico</a></li>
+                        <li><a href="#planes">Planes</a></li>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#contacto">Contactos</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="hero">
+                <img src="img/brujula.png" alt="">
+                <h1>Rumbo</h1>
+                <h3>EL SITIO WEB DE TURISMO IDEAL PARA TI</h3>
+                <!-- Button es para insertar un boton -->
+                <button>EMPEZAR</button>
+            </div>
+    </header>
+    <!-- Fin sección principal -->
+
+    <div id="planes">
+        <div class="container">
+            <h2>PLANES</h2>
+            <!-- br salto de linea -->
+            <!-- b bold de negrita -->
+            <P>En <b>RUMBO</b> tenemos los iguientes planes para ti<br>Selecciona el plan que más se ajuste a la
+                experiencia
+                que quieras vivir</P>
+            <!-- row fila -->
+            <div class="row">
+                <!-- usar - en los id sino no lo lee -->
+                <div class="item-planes">
+                    <img src="img/senderismo.png" alt="">
+                    <h3>SENDERISMO</h3>
+                    <p>5 a 8 personas<br>
+                        6 km de ruta<br>
+                        150.000 Pesos<br>
+                        Precio por persona</p>
+                </div>
+                <div class="item-planes">
+                    <img src="img/canotaje.png" alt="">
+                    <h3>CANOTAJE</h3>
+                    <p>5 a 8 personas<br>
+                        6 km de ruta<br>
+                        150.000 Pesos<br>
+                        Precio por persona</p>
+                </div>
+                <div class="item-planes">
+                    <img src="img/senderismo.png" alt="">
+                    <h3>CAMPING</h3>
+                    <p>5 a 8 personas<br>
+                        6 km de ruta<br>
+                        150.000 Pesos<br>
+                        Precio por persona</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin clases -->
+
+    <div id="destinos">
+        <div class="container">
+            <h2>DESTINOS</h2>
+            <div class="row">
+                <div class="item-destino">
+                    <img src="img/cartagena.png" alt="">
+                    <h3>CARTAGENA</h3>
+                </div>
+                <div class="item-destino">
+                    <img src="img/barranquilla.png" alt="">
+                    <h3>BARRANQUILLA</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item-destino">
+                    <img src="img/llanos.png" alt="">
+                    <h3>LLANOS ORIENTALES</h3>
+                </div>
+                <div class="item-destino">
+                    <img src="img/laguajira.png" alt="">
+                    <h3>LA GUAJIRA</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inicio contacto -->
+    <div id="contacto">
+        <div class="container">
+            <h2>CONTACTO</h2>
+            <P>Comparte con nosotros tus datos de contacto y te enviaremos<br>toda la información de los medios de
+                pagos.
+            </P>
+            <!-- formulario etiqueta form -->
+            <form action="#">
+                <div class="row">
+                    <!-- imput para crear cualquier item de formulario
+                    text: de texto
+                number:Numero -->
+                    <input class="campof" type="text" placeholder="Nombres:">
+                    <input class="campof" type="number" placeholder="Teléfono:">
+                </div>
+                <div class="row">
+                    <input class="campof" type="email" placeholder="Email:">
+                    <select class="campof" name="#" id="#">
+                        <option value="#">Ciudad</option>
+                        <option value="#">Bogotá</option>
+                        <option value="#">Chía</option>
+                        <option value="#">Cajica</option>
+                    </select>
+                </div>
+                <button>ENVIAR</button>
+            </form>
+        </div>
+    </div>
+    <!-- fin contacto -->
+    <footer>
+        <p>© Todos los derechos reservados</p>
+        <p>contacto@rumbo.com</p>
+        <p>+57 3212444445</p>
+        <p>Cr 90 #93 - 20</p>
+    </footer>
+
+</body>
+
+</html>
